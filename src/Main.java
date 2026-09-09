@@ -1,15 +1,31 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+//Задача 1
+    int age = 17;
+    if (age >= 18) {
+        System.out.println("Если возраст человека = " + age + " ты достиг совершеннолетия");
+    } else {
+        System.out.println("Если возраст человека = " + age + " ты не достиг совершеннолетия, нужно немного подождать");
+    }
 
-
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-
-  }
+//Задача 2
+    int temperanure = 6;
+    if (temperanure <= 5) {
+        System.out.println("На улице холодно, нужно надеть шапку, если температура = " + temperanure);
+    } else {
+        System.out.println("Сегодня тепло, можно идти без шапки, если температура = " + temperanure);
+    }
+    //Задача 3
+    int speed = 40 ;
+    if (speed >= 60 ) {
+        System.out.println("Если скорость " + speed + " , то придется заплатить штраф");
+    } else {
+        System.out.println(" Если скорость " + speed + " , можно ехать спокойно");
+    }
+    //Задача 4
+    int baby = 9 ;
+    if (baby <= 6 ) {
+        System.out.println("Если возраст человека равен " + baby + ", то ему нужно ходить в садик");
+    } else {
+        System.out.println("Если возраст человека равен " + baby + ", то ему нужно ходить в школу");
+    }
 }
