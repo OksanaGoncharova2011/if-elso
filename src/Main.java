@@ -34,7 +34,7 @@ void main() {
         System.out.println("Если возраст человека равен " + man + ", то ему нужно ходить на работу");
     }
     //Задача 5
-    int baby = 16;
+    int baby = 13;
     if (baby >= 5 && baby <= 14) {
         System.out.println(" Если возраст ребенка равен " + baby + ", нельзя кататься на аттракционе без сопровождения взрослого.");
     } else if (baby >= 14 && baby <= 54) {
@@ -51,10 +51,17 @@ void main() {
         System.out.printf(" нет мест");
     }
 //Задача 7
-    int one;
-    int two;
-    int three;
 
+    int one = 1;
+    int two = 2;
+    int three = 3;
+    if ( one >= two && one >= three) {
+        System.out.println("Наибольшее число" + one);
+    } else if ( two >= three && one <= two) {
+        System.out.printf("наибольшее число" + two);
+    } else {
+        System.out.printf("наибольшее число" + three);
+    }
 }
 
 
