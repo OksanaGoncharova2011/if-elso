@@ -14,55 +14,63 @@ void main() {
     } else {
         System.out.println("Сегодня тепло, можно идти без шапки, если температура = " + temperanure);
     }
-    //Задача 3
+    // Задача 3
     int speed = 40;
-    if (speed >= 60) {
-        System.out.println("Если скорость " + speed + " , то придется заплатить штраф");
+    if (speed > 60) {
+        System.out.println("Если скорость " + speed + ", то придется заплатить штраф");
     } else {
-        System.out.println(" Если скорость " + speed + " , можно ехать спокойно");
+        System.out.println("Если скорость " + speed + ", можно ездить спокойно");
     }
-    //Задача 4
 
-    int man = 40;
-    if (man >= 2 && man <= 6) {
-        System.out.println("Если возраст человека равен " + man + ", то ему нужно ходить в садик");
-    } else if (man >= 7 && man <= 17) {
-        System.out.println("Если возраст человека равен " + man + ", то ему нужно ходить в школу");
-    } else if (man >= 18 && man <= 24) {
-        System.out.println("Если возраст человека равен " + man + ", то ему нужно ходить в университет");
-    } else if (man >= 24 && man <= 60) {
-        System.out.println("Если возраст человека равен " + man + ", то ему нужно ходить на работу");
+    // Задача 4
+    int manAge = 40;
+    if (manAge >= 2 && manAge <= 6) {
+        System.out.println("Если возраст человека равен " + manAge + ", то ему нужно ходить в детский сад");
+    } else if (manAge >= 7 && manAge <= 17) {
+        System.out.println("Если возраст человека равен " + manAge + ", то ему нужно ходить в школу");
+    } else if (manAge >= 18 && manAge <= 24) {
+        System.out.println("Если возраст человека равен " + manAge + ", то ему нужно ходить в университет");
+    } else if (manAge > 24) { // В ТЗ: "больше 24"
+        System.out.println("Если возраст человека равен " + manAge + ", то ему пора ходить на работу");
     }
-    //Задача 5
-    int baby = 13;
-    if (baby >= 5 && baby <= 14) {
-        System.out.println(" Если возраст ребенка равен " + baby + ", нельзя кататься на аттракционе без сопровождения взрослого.");
-    } else if (baby >= 14 && baby <= 54) {
-        System.out.println("Если возраст человека равен " + baby + ", можно кататься на аттракционе без сопровождения взрослого");
-    }
-    //Задача 6
 
+    // Задача 5
+    int babyAge = 13;
+    if (babyAge < 5) {
+        System.out.println("Если возраст ребенка равен " + babyAge + ", то ему нельзя кататься на аттракционе");
+    } else if (babyAge >= 5 && babyAge <= 14) {
+        System.out.println("Если возраст ребенка равен " + babyAge + ", то ему можно кататься на аттракционе только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+    } else if (babyAge > 14) {
+        System.out.println("Если возраст ребенка равен " + babyAge + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+    }
+
+    // Задача 6
     int trainPeople = 10;
-    if (trainPeople < 60) {
-        System.out.println("Есть сидячие места");
-    } else if (trainPeople < 102) {
-        System.out.printf("есть стоячие места");
-    } else {
-        System.out.printf(" нет мест");
-    }
-//Задача 7
+    int totalSeats = 102;
+    int sittingSeats = 60;
 
+    if (trainPeople < sittingSeats) {
+        System.out.println("Есть сидячие места");
+    } else if (trainPeople < totalSeats) {
+        System.out.println("Есть стоячие места");
+    } else {
+        System.out.println("Нет мест");
+    }
+
+    // Задача 7
     int one = 1;
     int two = 2;
     int three = 3;
-    if ( one >= two && one >= three) {
-        System.out.println("Наибольшее число" + one);
-    } else if ( two >= three && one <= two) {
-        System.out.printf("наибольшее число" + two);
+
+    if (one >= two && one >= three) {
+        System.out.println("Наибольшее число " + one);
+    } else if (two >= one && two >= three) {
+        System.out.println("Наибольшее число " + two);
     } else {
-        System.out.printf("наибольшее число" + three);
+        System.out.println("Наибольшее число " + three);
     }
 }
+
 
 
 
